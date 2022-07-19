@@ -30,10 +30,6 @@ public class UsuarioResource {
 	private final UsuarioService service;
 	private final LancamentoService lancamentoService;
 	
-//	public UsuarioResource( UsuarioService service ) {
-//		this.service = service;
-//	}
-	
 	@PostMapping("/autenticar")
 	public ResponseEntity autenticar( @RequestBody UsuarioDTO dto) {
 		try {

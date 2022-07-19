@@ -36,12 +36,6 @@ public class LancamentoResource {
 	private final LancamentoService service;
 	private final UsuarioService usuarioService;
 	
-//	public LancamentoResource(LancamentoService service, UsuarioService usuarioService) {
-//		super();
-//		this.service = service;
-//		this.usuarioService = usuarioService;
-//	}
-	
 	@GetMapping
 	public ResponseEntity buscar( 
 			@RequestParam(value = "descricao", required = false) String descricao,
